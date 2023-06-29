@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1
--- Généré le : jeu. 29 juin 2023 à 07:56
+-- Généré le : jeu. 29 juin 2023 à 15:36
 -- Version du serveur : 10.4.20-MariaDB
 -- Version de PHP : 8.0.8
 
@@ -39,15 +39,8 @@ CREATE TABLE `cities` (
 --
 
 INSERT INTO `cities` (`id`, `name`, `zipcode`, `id_pays`) VALUES
-(3, 'Philippeville', '5600', 1),
-(4, 'Jamagne', '5600', 1),
-(6, 'Charleroi', '6000', 1),
-(7, 'Bruxelles', '1000', 1),
-(8, 'Gosselies', '6041', 1),
-(10, 'Istambul', '25L425', 3),
-(13, 'Liège', '4000', 1),
-(16, 'Madrid', '556685', 5),
-(17, 'USA', '', NULL);
+(19, 'Liège', '4000', 1),
+(20, 'Namur', '5000', 1);
 
 -- --------------------------------------------------------
 
@@ -76,7 +69,7 @@ CREATE TABLE `contacts` (
 
 INSERT INTO `contacts` (`id`, `lastname`, `firstname`, `email`, `adresse`, `id_city`, `inscription`, `hobbies`, `genre`, `id_pere`, `meta`, `prénom usuel`) VALUES
 (1, 'Charlier', 'Pierre', 'ch.pi@gmail.com', 'Allée des Bleuets 10', 3, 1, 'tennis,théâtre', 'homme', 12, NULL, ''),
-(2, 'Charlier', 'Benoit', NULL, 'Rue du Pouly 76', 4, 1, 'théâtre', 'homme', 12, NULL, ''),
+(2, 'Michèle', 'Vos', 'mv@cepegra.com', 'Rue du Pouly 76', 4, 1, 'théâtre', 'femme', 12, NULL, ''),
 (3, 'Barrier', 'Nicolas', 'nicolas.barrier@yahoo.fr', NULL, NULL, 0, NULL, NULL, NULL, NULL, ''),
 (4, 'VanGru', 'Martine', 'vgma@hotmail.com', 'rue Baron 2', 6, NULL, 'cinéma,théâtre', 'femme', NULL, NULL, ''),
 (5, 'Bonus', 'Stephane', NULL, NULL, NULL, 1, 'tennis', 'homme', NULL, NULL, ''),
@@ -89,14 +82,8 @@ INSERT INTO `contacts` (`id`, `lastname`, `firstname`, `email`, `adresse`, `id_c
 (12, 'Charlier', 'Jean', NULL, NULL, NULL, 1, NULL, 'homme', 13, NULL, ''),
 (13, 'Charlier', 'André', NULL, NULL, NULL, 1, NULL, 'homme', NULL, NULL, ''),
 (15, 'Fichère', 'Gregory', NULL, NULL, NULL, 1, NULL, 'homme', NULL, NULL, ''),
-(16, 'fabri', 'damien', NULL, NULL, NULL, 1, NULL, 'homme', NULL, NULL, ''),
 (17, 'burke', 'bernadette', NULL, NULL, NULL, 1, NULL, 'femme', NULL, '{\r\n\"poste\" : \"secrétaire\"\r\n}', ''),
-(19, 'vand', 'Thierry', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, ''),
-(21, 'vand2', 'Thierry2', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, ''),
-(22, 'chapeline', 'charlies brown', NULL, 'Rue du cinéma 12', 8, 1, NULL, 'homme', NULL, '{\"job\": \"acteur\"}', ''),
-(23, 'Louis', 'Michel', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, ''),
-(24, 'Louis', 'Michel', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, ''),
-(25, 'Proust', 'Marcel', 'marcel@books.com', NULL, NULL, 1, NULL, 'homme', NULL, NULL, '');
+(19, 'vand', 'Thierry', NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, '');
 
 -- --------------------------------------------------------
 
@@ -167,9 +154,14 @@ CREATE TABLE `pays` (
 
 INSERT INTO `pays` (`id`, `name`) VALUES
 (1, 'Belgique'),
+(11, 'Danemark'),
 (5, 'Espagne'),
 (3, 'France2'),
-(6, 'USA');
+(9, 'Italie'),
+(8, 'Pérou'),
+(10, 'Suède'),
+(6, 'USA'),
+(7, 'Venezuela');
 
 -- --------------------------------------------------------
 
@@ -263,19 +255,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT pour la table `cities`
 --
 ALTER TABLE `cities`
-  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT pour la table `contacts`
 --
 ALTER TABLE `contacts`
-  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
+  MODIFY `id` smallint(5) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=29;
 
 --
 -- AUTO_INCREMENT pour la table `pays`
 --
 ALTER TABLE `pays`
-  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` tinyint(3) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT pour la table `users`

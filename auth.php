@@ -2,7 +2,7 @@
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST'):
     $data = json_decode(file_get_contents('php://input', true));
-    //myPrint_r($_POST);
+    //myPrint_r($data);
     //exit;
     if(isset($data->auth)) :
         $sql = "SELECT * FROM users WHERE login= :login AND password = :password";
@@ -38,7 +38,7 @@ else :
    unset($_SESSION['token']);
    unset($_SESSION['id_user']);
    unset($_SESSION['expiration']);
-   $response['message'] = "Déconnexion";
+   $response['message'] = "Déconnecté";
    $response['code'] = "ok";
 endif; 
 echo json_encode($response);

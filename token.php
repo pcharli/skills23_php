@@ -9,7 +9,7 @@ $tokenError = false;
             $now = time();
             if($_SESSION['expiration'] < $now) :
                 $tokenError = true;
-            elseif($_SESSION['token'] != $data['token']) :
+            elseif ($_SESSION['token'] != $data['token']) :
                 $tokenError = true;
             endif;
         endif;
@@ -19,5 +19,8 @@ $tokenError = false;
         $response['message'] = "Access denied";
         $response['code'] = "pas ok";
         echo json_encode($response);
+        http_response_code(403);
         die();
+    else :
+        $_SESSION['expiration'] = time() + 1 * 300;
     endif;

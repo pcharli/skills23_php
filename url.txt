@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/63520613/how-to-chain-requests-using-insomnia-get-token-from-login-api-to-use-as-header

@@ -1,0 +1,579 @@
+_type: export
+__export_format: 4
+__export_date: 2023-06-29T13:35:36.791Z
+__export_source: insomnia.desktop.app:v2023.3.0
+resources:
+  - _id: req_7fc6a0842c114a5ea6a1fb863b203a73
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1687956316482
+    created: 1687954676905
+    url: "{{ _._url }}cities"
+    name: New city
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Madrid",
+        	"id_pays": 5,
+        	"zipcode": 556685,
+        	"token": "{{ _._token }}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1687954676905
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    parentId: null
+    modified: 1687944251045
+    created: 1687944251045
+    name: skills_php_demo.yaml
+    description: ""
+    scope: design
+    _type: workspace
+  - _id: req_654053383bd441849045cb4dd54ef53a
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688030226442
+    created: 1687956502638
+    url: "{{ _._url }}pays"
+    name: New pays
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name": "Danemark",
+        	"token": "{{ _._token }}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1687954641693.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3128bb6c8f304bd9b0eb368038e9c85e
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688024710680
+    created: 1687956558213
+    url: "{{ _._url }}contacts"
+    name: New contact
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"firstname": "Marcel2",
+        	"lastname": "Proust2",
+        	"genre": "femme",
+        	"email": "marcel3@books.com",
+        	"token": "{{ _._token }}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1687954624087.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_4e0a23dafb204716b2c8183d888d7fb9
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688027079088
+    created: 1688025309541
+    url: "{{ _._url }}contacts"
+    name: Edit contact
+    description: ""
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"firstname": "Vos",
+        	"lastname": "Michèle",
+        	"genre": "femme",
+        	"email": "mv@cepegra.com",
+        	"token": "{{ _._token }}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1687954619686.3125
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_486df04b85d74950b12371f8c3272ea7
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688027358537
+    created: 1687956683401
+    url: "{{ _._url }}contacts"
+    name: delete city
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+
+        	"token": "{{ _._token }}"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1687954615284.875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_3e99447e8d0545d79906946a02685c32
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1687958139161
+    created: 1687954606482
+    url: "{{ _._url }}contacts/5"
+    name: New Request
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1687954606482
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_86e5709f5b344aceafb169621f57b1ab
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1687951879894
+    created: 1687944297680
+    url: "{{ _._url }}auth"
+    name: auth
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"login": "admin",
+        	"password": "pass",
+        	"auth": ""
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1687944297680
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_eb472bda5fff4b7b9a003969adfd74fb
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1687951868516
+    created: 1687946040970
+    url: "{{ _._url }}auth"
+    name: deconnexion
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1687908156170.5
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_de13b86a84564c4bb37d55fb759af4a7
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688025958370
+    created: 1687946132391
+    url: "{{ _._url }}contacts"
+    name: liste contacts
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1687890085415.75
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_e7b349e64ea046e98665fd8f2981e049
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688045107083
+    created: 1688045103743
+    url: "{{ _._url }}cities"
+    name: liste cities
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1687887826571.4062
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_40062f9c0410428ca2bf415947dadc7c
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688044663681
+    created: 1688044556810
+    url: "{{ _._url }}contacts/2"
+    name: un contact
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1687885567727.0625
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_58d060e4a4614e2fb6a937193bf38714
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688044680666
+    created: 1688044675366
+    url: "{{ _._url }}contacts/200"
+    name: un contact inexistant
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers: []
+    authentication: {}
+    metaSortKey: -1687883308882.7188
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_cbc0f8529be04647926acc7e05949212
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688029721641
+    created: 1688027406933
+    url: "{{ _._url }}contacts"
+    name: recherche sur contacts
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"search" : {
+        		"firstname": "pie",
+        		"lastname": "cha",
+        		"operator": "and"
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1687881050038.375
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_f0d5d04353fd4d19bf0184f0b91449ae
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688030337562
+    created: 1688029981747
+    url: "{{ _._url }}cities"
+    name: recherche sur villes
+    description: ""
+    method: GET
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"search" : {
+        		"id_pays": 1,
+        		"operator": "or"
+        	}
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1687876532349.6875
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_1b16cb8b27444bb99f14b05217521a32
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688033833799
+    created: 1688030983924
+    url: "{{ _._url }}cities"
+    name: delete plusieurs villes
+    description: ""
+    method: DELETE
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"token" : "{{ _._token }}",
+        	"delete": [6,7]
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+    authentication: {}
+    metaSortKey: -1687874273505.3438
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_0fcb58312d17c5955f282372a473368641e41adf
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688042781261
+    created: 1687944251051
+    name: Base Environment
+    data:
+      _url: http://localhost/skills23/
+      test: 06fd36b54a5b272d18c584eba466993e
+      _token: "{% response 'body', 'req_86e5709f5b344aceafb169621f57b1ab',
+        'b64::JC50b2tlbg==::46b', 'always', 60 %}"
+    dataPropertyOrder:
+      "&":
+        - _url
+        - test
+        - _token
+    color: null
+    isPrivate: false
+    metaSortKey: 1687944251051
+    _type: environment
+  - _id: jar_0fcb58312d17c5955f282372a473368641e41adf
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1687944326917
+    created: 1687944251052
+    name: Default Jar
+    cookies:
+      - key: PHPSESSID
+        value: 338vcqr110e1qu8me381n05teo
+        domain: localhost
+        path: /
+        hostOnly: true
+        creation: 2023-06-28T09:25:26.916Z
+        lastAccessed: 2023-06-28T09:25:26.916Z
+        id: "7422062176570539"
+    _type: cookie_jar
+  - _id: spc_c453acb6d0e04f1f9d75ec0051ce5ffb
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1687944251046
+    created: 1687944251046
+    fileName: skills_php_demo.yaml
+    contents: ""
+    contentType: yaml
+    _type: api_spec
+  - _id: uts_2976e8758dd642fe81df706652b1b64a
+    parentId: wrk_f940cfd4b27d4476b9b67695ff4c7724
+    modified: 1688042962720
+    created: 1688042962720
+    name: carnet adresses
+    _type: unit_test_suite
+  - _id: ut_d569ff631db44184af1f3ce27244e460
+    parentId: uts_2976e8758dd642fe81df706652b1b64a
+    modified: 1688043221423
+    created: 1688042974401
+    requestId: req_86e5709f5b344aceafb169621f57b1ab
+    name: auth
+    code: |-
+      const response1 = await insomnia.send();
+      expect(response1.status).to.equal(200);
+      const body = JSON.parse(response1.data);
+      expect(body).to.be.an('object');
+      expect(body).to.have.property('token');
+      expect(body.token).to.be.an('string');
+    _type: unit_test
+  - _id: ut_c90e4490b2184cc0be3473a7ae2dd1e9
+    parentId: uts_2976e8758dd642fe81df706652b1b64a
+    modified: 1688043603414
+    created: 1688043304929
+    requestId: req_eb472bda5fff4b7b9a003969adfd74fb
+    name: deconnexion
+    code: |-
+      const response1 = await insomnia.send();
+      expect(response1.status).to.equal(200);
+      const body = JSON.parse(response1.data);
+      expect(body).to.be.an('object');
+      expect(body).to.have.property('message');
+      expect(body.message).to.be.an('string');
+      expect(body.message).to.deep.equal('Déconnecté');
+      expect(body.code).to.be.an('string');
+      expect(body.code).to.deep.equal('ok');
+    _type: unit_test
+  - _id: ut_bcf6895ef97745f98a4a7f6ebfa99acb
+    parentId: uts_2976e8758dd642fe81df706652b1b64a
+    modified: 1688045636727
+    created: 1688043713652
+    requestId: req_de13b86a84564c4bb37d55fb759af4a7
+    name: liste contacts
+    code: |-
+      const response1 = await insomnia.send();
+      expect(response1.status).to.equal(200);
+
+      const body = JSON.parse(response1.data);
+      expect(body.content).to.be.an('array');
+      const records = body.content;
+      records.forEach(record => {
+      	expect(record).to.be.an('object');
+      	expect(record).to.have.property('id');
+      	expect(record.id).to.be.an('number');
+      	if(record.genre) {
+      		expect(record.genre).to.be.an('string');
+      		expect(record.genre).to.contains.oneOf(['homme', 'femme', 'autre']);
+      	}
+      })
+      expect(body).to.have.property('code');
+      expect(body.code).to.be.an('string');
+      expect(body.code).to.deep.equal('ok');
+      expect(body).to.have.property('message');
+      expect(body.message).to.be.an('string');
+      expect(body.message).to.deep.equal('Liste contacts');
+      expect(body).to.have.property('nbhits');
+      expect(body.nbhits).to.be.an('number');
+      /*expect(body).to.have.property('message');
+
+      expect(body.message).to.deep.equal('Déconnecté');
+      expect(body.code).to.be.an('string');
+      expect(body.code).to.deep.equal('ok');
+      */
+    _type: unit_test
+  - _id: ut_7171443823444af5864acfc84e1a42f2
+    parentId: uts_2976e8758dd642fe81df706652b1b64a
+    modified: 1688045664487
+    created: 1688044504317
+    requestId: req_40062f9c0410428ca2bf415947dadc7c
+    name: un contact
+    code: |-
+      const response1 = await insomnia.send();
+      expect(response1.status).to.equal(200);
+
+      const body = JSON.parse(response1.data);
+      expect(body.content).to.be.an('array');
+      const records = body.content;
+      records.forEach(record => {
+      	expect(record).to.be.an('object');
+      	expect(record).to.have.property('id');
+      	expect(record.id).to.be.an('number');
+      	if(record.genre) {
+      		expect(record.genre).to.be.an('string');
+      		expect(record.genre).to.contains.oneOf(['homme', 'femme', 'autre']);
+      	}
+      })
+      expect(body).to.have.property('code');
+      expect(body.code).to.be.an('string');
+      expect(body.code).to.deep.equal('ok');
+      expect(body).to.have.property('message');
+      expect(body.message).to.be.an('string');
+      expect(body.message).to.deep.equal('Liste contacts');
+      expect(body).to.have.property('nbhits');
+      expect(body.nbhits).to.be.an('number');
+    _type: unit_test
+  - _id: ut_086f214976d24bd8a61de2ea3742a3a8
+    parentId: uts_2976e8758dd642fe81df706652b1b64a
+    modified: 1688044891353
+    created: 1688044701315
+    requestId: req_58d060e4a4614e2fb6a937193bf38714
+    name: un contact inexistant
+    code: |
+      const response1 = await insomnia.send();
+      expect(response1.status).to.equal(200);
+      const body = JSON.parse(response1.data);
+      expect(body).to.be.an('object');
+      expect(body).to.have.property('message');
+      expect(body.message).to.be.an('string');
+      expect(body.message).to.deep.equal('Pas de réponse');
+      expect(body).to.have.property('code');
+      expect(body.code).to.be.an('string');
+      expect(body.code).to.deep.equal('pas ok');
+    _type: unit_test
